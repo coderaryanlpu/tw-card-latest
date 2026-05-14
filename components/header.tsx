@@ -39,8 +39,8 @@ export function Header({ onGetCard, loading }: HeaderProps) {
           <div className="flex flex-1 items-center justify-start">
             <a href="/" className="flex items-center gap-2 shrink-0 cursor-pointer hover:opacity-90 transition-opacity">
               <TrustWalletIcon className="w-8 h-8 md:w-10 md:h-10" />
-              <span className="text-xl md:text-2xl" style={{ fontFamily: 'var(--font-montserrat), Montserrat, system-ui, sans-serif', fontWeight: 900, letterSpacing: '-0.04em', color: '#0000FF' }}>
-                TruST<span style={{ color: '#0500FF' }}>CARD</span>
+              <span className="text-xl md:text-2xl lowercase" style={{ fontFamily: 'var(--font-montserrat), Montserrat, system-ui, sans-serif', fontWeight: 900, letterSpacing: '-0.04em', color: '#0000FF' }}>
+                trust<span className="uppercase" style={{ color: '#0500FF' }}>card</span>
               </span>
             </a>
           </div>
