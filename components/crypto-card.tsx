@@ -33,12 +33,7 @@ export function CryptoCard() {
         <div className="relative h-full flex flex-col justify-between">
           {/* Top Row */}
           <div className="flex items-start justify-between -mt-1">
-            <img 
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-NWYgOewTDtwQ0qlHDT7rQJSb9Zr8T7.png" 
-              alt="trust" 
-              className="h-6 w-auto object-contain"
-              crossOrigin="anonymous"
-            />
+            <span className="text-white font-semibold text-sm">Trust Wallet</span>
             <Wifi className="w-5 h-5 text-white/80 rotate-90" />
           </div>
 
