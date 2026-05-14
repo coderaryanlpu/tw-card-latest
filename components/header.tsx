@@ -1,7 +1,6 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import { TrustWalletIcon } from "./trust-wallet-icon"
 import { motion } from "framer-motion"
 import { Menu, X } from "lucide-react"
 import { useState } from "react"
@@ -37,12 +36,12 @@ export function Header({ onGetCard, loading }: HeaderProps) {
 
           {/* LEFT: logo — takes flex-1, aligns content to start */}
           <div className="flex flex-1 items-center justify-start">
-            <a href="/" className="flex items-center gap-1.5 shrink-0 cursor-pointer hover:opacity-90 transition-opacity">
-              <TrustWalletIcon className="w-8 h-8 md:w-10 md:h-10" />
-              <span className="text-xl md:text-2xl font-bold tracking-tight">
-                <span style={{ color: '#0500FF' }}>trust</span>
-                <span style={{ color: '#0D1F3C' }} className="font-extrabold">CARD</span>
-              </span>
+            <a href="/" className="flex items-center shrink-0 cursor-pointer hover:opacity-90 transition-opacity">
+              <img 
+                src="/images/trust-logo.png" 
+                alt="Trust Logo" 
+                className="h-8 md:h-10 w-auto"
+              />
             </a>
           </div>
 
