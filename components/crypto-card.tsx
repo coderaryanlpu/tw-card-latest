@@ -36,7 +36,8 @@ export function CryptoCard() {
             <img 
               src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-NWYgOewTDtwQ0qlHDT7rQJSb9Zr8T7.png" 
               alt="trust" 
-              className="h-5 w-auto object-contain"
+              className="h-6 w-auto object-contain"
+              crossOrigin="anonymous"
             />
             <Wifi className="w-5 h-5 text-white/80 rotate-90" />
           </div>
