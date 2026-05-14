@@ -33,7 +33,7 @@ export function CryptoCard() {
         <div className="relative h-full flex flex-col justify-between">
           {/* Top Row */}
           <div className="flex items-start justify-between -mt-1">
-            <span className="text-white font-semibold text-sm">Trust Wallet</span>
+            <span className="text-[#0000FF] font-bold text-lg tracking-tight" style={{ fontFamily: 'Arial Black, sans-serif' }}>trust</span>
             <Wifi className="w-5 h-5 text-white/80 rotate-90" />
           </div>
 
