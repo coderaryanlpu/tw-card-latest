@@ -33,7 +33,11 @@ export function CryptoCard() {
         <div className="relative h-full flex flex-col justify-between">
           {/* Top Row */}
           <div className="flex items-start justify-between -mt-1">
-            <span className="text-[#0000FF] font-bold text-lg tracking-tight" style={{ fontFamily: 'Arial Black, sans-serif' }}>trust</span>
+            <img 
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-NWYgOewTDtwQ0qlHDT7rQJSb9Zr8T7.png" 
+              alt="trust" 
+              className="h-5 w-auto object-contain"
+            />
             <Wifi className="w-5 h-5 text-white/80 rotate-90" />
           </div>
 
