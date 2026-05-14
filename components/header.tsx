@@ -37,10 +37,15 @@ export function Header({ onGetCard, loading }: HeaderProps) {
 
           {/* LEFT: logo — takes flex-1, aligns content to start */}
           <div className="flex flex-1 items-center justify-start">
-            <a href="/" className="flex items-center gap-2 shrink-0 cursor-pointer hover:opacity-90 transition-opacity">
+            <a href="/" className="flex items-center gap-1 shrink-0 cursor-pointer hover:opacity-90 transition-opacity">
               <TrustWalletIcon className="w-8 h-8 md:w-10 md:h-10" />
+              <img 
+                src="/images/trust-text.svg" 
+                alt="Trust" 
+                className="h-4 md:h-5 w-auto"
+              />
               <span className="font-black text-lg md:text-xl uppercase tracking-wide" style={{ color: '#0500FF' }}>
-                TrustCard
+                Card
               </span>
             </a>
           </div>
