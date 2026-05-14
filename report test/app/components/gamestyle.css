@@ -1,0 +1,173 @@
+/* ===========================
+   Base Styles
+=========================== */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* ===========================
+   Light Mode (system preference)
+=========================== */
+@media (prefers-color-scheme: light) {
+  body {
+    background: #ffffff;
+    color: #171717;
+  }
+
+  .input-box {
+    background: #fff;
+    border: 1px solid #ccc;
+  }
+
+  .input-box input {
+    color: #000;
+  }
+
+  .action-text {
+    color: #007aff;
+  }
+
+  .qr-icon {
+    color: #007aff;
+  }
+
+  .profile-icon {
+    background: #fff;
+    border-color: #007aff;
+  }
+
+  .next-btn {
+    background: #007aff;
+    color: #fff;
+  }
+
+  .next-btn:disabled {
+    background: #b3d4ff;
+    color: #666;
+  }
+
+  .input-box:hover {
+    background: #f8f8f8;
+    border-color: #007aff;
+    box-shadow: 0 0 6px rgba(0, 122, 255, 0.3);
+  }
+}
+
+/* ===========================
+   Dark Mode (system preference)
+=========================== */
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #000000;
+    color: #fff;
+  }
+
+  .input-box {
+    background: #1e1e1e;
+    border: 1px solid #2a2a2a;
+  }
+
+  .input-box input {
+    color: #e0e0e0;
+  }
+
+  .action-text {
+    color: #49e678;
+  }
+
+  .qr-icon {
+    color: #49e678;
+  }
+
+  .profile-icon {
+    background: #1e1e1e;
+    border-color: #49e678;
+  }
+
+  .next-btn {
+    background: #49e678;
+    color: #000;
+  }
+
+  .next-btn:disabled {
+    background: #2f4f36;
+    color: #777;
+  }
+
+  .input-box:hover {
+    background: #2a2a2a;
+    border-color: #49e678;
+    box-shadow: 0 0 6px rgba(73, 230, 120, 0.5);
+  }
+}
+
+/* ===========================
+   Inputs stacked vertically
+=========================== */
+.inputs-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Input box base */
+.input-box {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  padding: 12px 14px;
+  transition: all 0.2s ease;
+}
+
+.input-box input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 16px;
+}
+
+.right-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.profile-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid;
+}
+
+/* Next button */
+.next-btn {
+  width: 100%;
+  padding: 16px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: auto;
+}
+
+/* Mobile fixed bottom button */
+.mobile-btn-wrapper {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.5rem 1rem 1.5rem;
+  z-index: 50;
+  display: flex;
+  justify-content: center;
+}
