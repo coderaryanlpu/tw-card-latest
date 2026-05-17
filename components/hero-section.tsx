@@ -14,7 +14,7 @@ interface HeroSectionProps {
 
 export function HeroSection({ onGetCard, loading }: HeroSectionProps) {
   return (
-    <section className="relative min-h-screen pt-8 md:pt-12 overflow-hidden bg-gradient-to-b from-slate-50 via-white to-blue-50/30">
+    <section className="relative min-h-screen lg:min-h-[auto] pt-8 md:pt-12 lg:pt-32 lg:pb-10 overflow-hidden bg-gradient-to-b from-slate-50 via-white to-blue-50/30">
       {/* Background Decorations */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-20 left-10 w-72 h-72 bg-blue-200/30 rounded-full blur-3xl" />
@@ -22,8 +22,8 @@ export function HeroSection({ onGetCard, loading }: HeroSectionProps) {
         <div className="absolute bottom-20 left-1/4 w-80 h-80 bg-blue-100/40 rounded-full blur-3xl" />
       </div>
 
-      <div className="relative w-full px-4 sm:px-6 lg:px-12 xl:px-16 py-12 md:py-20">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center lg:items-start">
+      <div className="relative w-full px-4 sm:px-6 lg:px-12 xl:px-16 py-12 md:py-20 lg:py-0">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
           {/* Left Content */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -109,13 +109,13 @@ export function HeroSection({ onGetCard, loading }: HeroSectionProps) {
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="flex flex-col items-center lg:items-end w-full lg:pt-24 lg:pr-21"
+            className="flex flex-col items-center lg:items-end w-full lg:pr-21"
           >
             {/* Spacer between button and card on mobile */}
-            <div className="h-16 lg:hidden" />
+            <div className="h-8 lg:hidden" />
 
             {/* Card wrapper — centered on mobile, right-aligned on desktop */}
-            <div className="relative mx-auto lg:mx-0">
+            <div className="relative mx-auto lg:mx-0 lg:scale-[1.2] xl:scale-[1.3] lg:origin-right lg:translate-y-4">
               {/* Payment Complete badge */}
               <motion.div
                 animate={{ y: [-10, 10, -10] }}

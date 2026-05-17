@@ -1,13 +1,13 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { 
-  Zap, 
-  Percent, 
-  Globe, 
-  Shield, 
-  CreditCard, 
-  Smartphone 
+import {
+  Zap,
+  Percent,
+  Globe,
+  Shield,
+  CreditCard,
+  Smartphone
 } from "lucide-react"
 
 const features = [
@@ -51,7 +51,7 @@ const features = [
 
 export function FeaturesSection() {
   return (
-    <section id="features" className="py-20 md:py-32 bg-white">
+    <section id="features" className="pt-20 pb-16 md:py-32 lg:pt-16 lg:pb-12 bg-white">
       <div className="w-full px-4 sm:px-6 lg:px-12 xl:px-16">
         {/* Section Header */}
         <motion.div

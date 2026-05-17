@@ -41,7 +41,7 @@ function LinkedinIcon({ className = "" }: { className?: string }) {
       fill="currentColor"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
     </svg>
   )
 }
@@ -81,17 +81,17 @@ export function Footer() {
           {/* Brand Column */}
           <div className="col-span-2 md:col-span-1">
             <a href="/" className="flex items-center gap-2 mb-4 cursor-pointer hover:opacity-90 transition-opacity inline-flex">
-              <TrustWalletIcon className="w-8 h-8" />
-              <span className="font-black text-lg uppercase tracking-wide" style={{ color: '#0500FF' }}>TrustCard</span>
+              <TrustWalletIcon className="w-8 h-8 -translate-y-[1px]" />
+              <img src="/trust-text.svg" alt="Trust" className="h-[18px] w-auto" />
             </a>
             <p className="text-slate-500 text-sm mb-6">
               Spend directly from your crypto wallet with 0% fees.
             </p>
             <div className="flex items-center gap-4">
-              <a href="https://twitter.com/trustwallet" className="text-slate-400 hover:text-blue-600 transition-colors">
+              <a href="https://twitter.com/trustwallet" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-blue-600 transition-colors">
                 <TwitterIcon className="w-5 h-5" />
               </a>
-              <a href="https://github.com/trustwallet" className="text-slate-400 hover:text-blue-600 transition-colors">
+              <a href="https://github.com/trustwallet" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-blue-600 transition-colors">
                 <GithubIcon className="w-5 h-5" />
               </a>
               <a href="https://www.linkedin.com/company/trustwallet" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-blue-600 transition-colors">
@@ -107,7 +107,7 @@ export function Footer() {
               <ul className="space-y-3">
                 {links.map((link) => (
                   <li key={link.label}>
-                    <a href={link.href} target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-blue-600 transition-colors text-sm">
+                    <a href={link.href} className="text-slate-500 hover:text-blue-600 transition-colors text-sm">
                       {link.label}
                     </a>
                   </li>

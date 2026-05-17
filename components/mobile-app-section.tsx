@@ -22,14 +22,14 @@ const floatingCoins = [
   {
     name: "USDT",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-dTdTYLxhQ2271Vl0PNL4oH8iYhTzl7.png",
-    size: 65,
+    size: 80,
     position: { top: "60%", left: "8%" },
     delay: 1,
   },
   {
     name: "ETH",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Lbb48urfl2ptnLnXudnzCfNXrucnq3.png",
-    size: 70,
+    size: 60,
     position: { top: "75%", left: "20%" },
     delay: 1.5,
   },
@@ -51,7 +51,7 @@ const floatingCoins = [
 
 export function MobileAppSection() {
   return (
-    <section id="crypto" className="py-24 bg-gradient-to-b from-white to-slate-50 overflow-hidden">
+    <section id="crypto" className="pt-16 pb-24 md:pt-24 lg:pt-12 bg-gradient-to-b from-white to-slate-50 overflow-hidden">
       <div className="w-full px-4 sm:px-6 lg:px-12 xl:px-16">
         <div className="flex flex-col lg:flex-row items-center gap-16">
           {/* Left Content */}
@@ -69,7 +69,7 @@ export function MobileAppSection() {
               </span>
             </h2>
             <p className="text-xl text-slate-600 mb-8 max-w-lg mx-auto lg:mx-0">
-              Spend directly from your wallet using any of your favorite cryptocurrencies. 
+              Spend directly from your wallet using any of your favorite cryptocurrencies.
               Seamless conversion at the best rates.
             </p>
 
@@ -139,7 +139,7 @@ export function MobileAppSection() {
 
             {/* Credit Card */}
             <motion.div
-              className="relative z-20"
+              className="relative z-20 lg:scale-[1.2] xl:scale-[1.3]"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
